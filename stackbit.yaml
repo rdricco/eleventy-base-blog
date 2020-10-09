@@ -5,7 +5,7 @@ publishDir: dist # folder with the generated static site files
 staticDir: static # folder with files that are copied to publishDir as is
 uploadDir: static/images # folder with media files, relative to staticDir
 pagesDir: src/pages # folder with markdown page files
-dataDir: data # folder with data files (yaml, json, toml)
+dataDir: _data # folder with data files (yaml, json, toml)
 excludePages:
     - example/**/*
     - README.md
