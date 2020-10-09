@@ -1,6 +1,6 @@
 stackbitVersion: ~0.3.0
 ssgName: Routify
-buildCommand: npm run export # build command that builds static site
+buildCommand: npx eleventy # build command that builds static site
 publishDir: dist # folder with the generated static site files
 staticDir: static # folder with files that are copied to publishDir as is
 uploadDir: static/images # folder with media files, relative to staticDir
@@ -19,6 +19,6 @@ models:
         urlPath: "/{slug}"
     post:
         type: page
-        urlPath: "/blog/{slug}"
+        urlPath: "/posts/{slug}"
     author:
         type: data
